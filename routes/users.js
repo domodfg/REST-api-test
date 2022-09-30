@@ -12,19 +12,6 @@ let users = {
   },
 };
 
-let messages = {
-  1: {
-    id: '1',
-    text: 'Hello World',
-    userId: '1',
-  },
-  2: {
-    id: '2',
-    text: 'By World',
-    userId: '2',
-  },
-};
-
 /* GET users listing. */
 router.get("/", function (req, res, next) {
   return res.send(Object.values(users));
